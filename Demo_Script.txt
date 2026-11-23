@@ -1,24 +1,40 @@
-FORM-CVS 1   |   Deliverable 3
+FORM-CVS 1    /    DELIVERABLE 3
 Form extraction test automation
 Thomas Kim and Sai Thaw Di Nine
 
-00:00  Data discovery and setup
-The two forms in this test contain fictional records. For the handwritten phone number, the setup script opens the University of California Irvine digit dataset and checks all three thousand eight hundred twenty-three training rows. It keeps the first labeled example of each digit. In the phone field shown here, the individual digit shapes came from real handwriting. The number itself is fictional.
-Command: python3 demo.py setup --work demo-work
+Run the commands from the repository root in order. Use a new work directory for each take. The setup needs network access, Pillow, and a signed-in Codex CLI. The chapter on the simulator uses a local browser.
 
-00:23  Generating the test cases
-Each row combines a capture context, an input class, and an expected output. The generator prints those identifiers and hashes the image. Sixteen cases use fourteen different images. We reuse the medical baseline with a vague prompt, and reuse the job baseline to check consistency. This example rotates the medical form ten degrees after flash glare erases one checkbox.
-Command: python3 demo.py generate --work demo-work
+00:00   Data discovery and setup
+We are testing how an image reader extracts fields from job applications and medical intake forms. The setup command prints the Python, Pillow, and Codex versions, then downloads the handwritten digit archive from U C I. It scans 3,823 labeled rows, keeps one sample of each digit, and checks the selection against the copy in the repository. The forms use fictional personal information.
+Command: python3 automation/demo.py setup --work runs/video-v2
 
-00:48  Running Codex CLI
-This is a fresh execution of the blank-field test. The runner creates an empty working directory and copies only the image into it. It starts Codex with the image and the structured extraction prompt. The expected answers stay with the local scorer. The two blank lines on this form are email and secondary insurance. Both must come back as JSON null. Every other field, including both medication doses, must still match. The terminal records the actual elapsed time and the result of all twelve checks.
-Command: python3 demo.py live --work demo-work
+00:25   Generating test cases
+The next command runs the team's generator. Each output line corresponds to a row of the decision table. Take test eleven. C one means a normal capture, I five selects print-style writing, and O one requires every field to match. The generator places the sampled digits in the phone field and saves the image, prompt, expected values, and fingerprint. Sixteen cases use fourteen distinct images.
+Command: python3 automation/generate.py --out runs/video-v2/images
 
-01:30  Comparing the recorded results
-The scorer now reads the saved responses. Codex passed forty-five of forty-eight attempts, and all seven fields agreed in the three fresh repeatability sessions. All three failures occurred under glare. Codex returned null for the missing checkbox mark. The prompt calls for illegible when an image hides the answer. ChatGPT web also missed that distinction and returned false. It completed fifteen scenarios before its upload limit blocked the last one.
-Command: python3 demo.py results --work demo-work
+00:50   Data augmentation
+Here is the same medical form before and after augmentation. On the clear image the box next to asthma has a visible outline and no check mark. The first transformation lowers brightness to forty-two percent. The twelve expected values stay the same. The second covers that checkbox with glare and rotates the page ten degrees. Once the entire mark disappears, the answer key changes from false to illegible. The script rebuilds both images and verifies their fingerprints.
+Command: python3 automation/demo.py augment --work runs/video-v2
 
-01:57  Inspecting a failure
-The local simulator puts the original image next to its expected and observed fields. Choose a case, execution path, and attempt to inspect the mismatch. The run button makes a fresh Codex request and preserves it separately. The example on screen shows why simply checking for valid JSON would have missed the problem.
+01:18   Executing the automation scripts
+This command runs the actual Codex test script against the newly generated images. The runner gives each session the form and its prompt. The local scorer keeps the answer key separate. We run the glare case once, the blank-field case once, and the consistency case three times. The terminal shows each verdict and elapsed time as the requests finish.
+Command: python3 automation/run_codex.py --fixtures runs/video-v2/images --case TC04 TC14 TC16 --repeat 1 --jobs 2 --out runs/video-v2/fresh
 
-Audio uses synthesized narration. Terminal output is a timestamped capture of local subprocesses. The demo take is separate from the reported campaign.
+01:40   Automatic field validation
+Look at the two different meanings of missing information. In test fourteen the email and insurance lines are visibly blank. Codex returns null for both, so all twelve checks pass. In test four the asthma mark is hidden. Codex also returns null there, but the expected answer is illegible. That single mismatch fails the case. Four of the five new requests passed. All seven job fields agreed across the three repeat runs.
+Command: python3 automation/demo.py inspect --work runs/video-v2
+
+02:06   Results from the full campaign
+We can also reproduce the report without calling a model again. This command scores the saved receipts for each execution path. Across the full Codex campaign, forty-five of forty-eight attempts passed. Four hundred forty-seven of four hundred fifty field checks were correct. ChatGPT web passed fourteen of fifteen completed attempts. The upload limit blocked its last scenario. The five new demo requests are counted separately.
+Command: python3 automation/demo.py results --work runs/video-v2
+
+02:32   Inspecting a recorded discrepancy
+In the local simulator, we select test four from the case list and inspect the first saved Codex attempt. The input image stays beside the expected and observed fields. The highlighted asthma row is the only discrepancy. A check that only asked whether the response was valid JSON would have passed it.
+Command: python3 automation/simulator.py --port 18781
+Open http://127.0.0.1:18781, choose TC04 and Codex CLI, and inspect attempt 1.
+
+02:50   Automation costs, complexity and coverage
+The forty-eight Codex requests used almost two hundred ninety-four seconds of summed process time. The median request took about five point eight seconds. The receipts provide input, cached, and output token counts. They do not provide a dollar charge per request. The complexity table counts source lines and each script's highest function branch score. The result aggregator has the highest score, forty. The suite covered sixteen scenarios and fifteen distinct context and input pairs.
+Command: python3 automation/demo.py costs --work runs/video-v2
+
+The browser viewport was recorded during script execution. Each chapter holds its final frame through the explanation. Narration uses a synthesized voice. Captions and chapter markers are embedded in the MP4. The new request receipts and captured console output are in evidence/demo-v2/.

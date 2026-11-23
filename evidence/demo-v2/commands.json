@@ -1,0 +1,51 @@
+[
+  {
+    "stage": "setup",
+    "command": "python3 automation/demo.py setup --work runs/video-v2",
+    "exit": 0,
+    "seconds": 0.691,
+    "stdout": "Python 3.12.14 / Pillow 13.0.0\ncodex-cli 0.171.0-alpha.13\nOpening the UCI handwritten digit archive...\nDiscovered 3823 training rows, retained the first labeled sample of each digit.\nSource member: optdigits.tra\nTraining rows: 3823\nDigit 4: source row 4\nVerified the packaged ten-glyph sample against UCI.\n"
+  },
+  {
+    "stage": "generate",
+    "command": "python3 automation/generate.py --out runs/video-v2/images",
+    "exit": 0,
+    "seconds": 0.347,
+    "stdout": "TC01  C1 x I1   O1              TC01.png  c8600b7a4f\nTC02  C1 x I2   O1              TC02.png  739474d783\nTC03  C2 x I2   O1              TC03.png  0a20a9f9ff\nTC04  C3 x I2   O1/O5           TC04.png  ca7ab30cf9\nTC05  C4 x I1   O1              TC05.png  4171cc2724\nTC06  C5 x I2   O1              TC06.png  28a04bd897\nTC07  C6 x I2   O1              TC07.png  739474d783\nTC08  C1 x I3   O1              TC08.png  490fddef3b\nTC09  C1 x I10  O5              TC09.png  e83f57dedf\nTC10  C1 x I4   O1              TC10.png  5e1b720f4d\nTC11  C1 x I5   O1              TC11.png  6ae64bffb1\nTC12  C1 x I6   O1/O5           TC12.png  00298bcb7b\nTC13  C1 x I7   O1              TC13.png  2ad010e2f9\nTC14  C1 x I8   O1              TC14.png  1e7f54e37b\nTC15  C1 x I9   O1              TC15.png  7fb6b02a96\nTC16  C1 x I1   O1 + agreement  TC16.png  c8600b7a4f\n"
+  },
+  {
+    "stage": "augment",
+    "command": "python3 automation/demo.py augment --work runs/video-v2",
+    "exit": 0,
+    "seconds": 0.17,
+    "stdout": "TC02 -> TC03   Brightness x 0.42\n  Image SHA-256  0a20a9f9ff238d43...  matches manifest\n  All 12 expected values preserved\nTC02 -> TC04   Hide asthma mark; rotate 10 degrees\n  Image SHA-256  ca7ab30cf9883d4a...  matches manifest\n  asthma: false -> \"[illegible]\"\n"
+  },
+  {
+    "stage": "live",
+    "command": "python3 automation/run_codex.py --fixtures runs/video-v2/images --case TC04 TC14 TC16 --repeat 1 --jobs 2 --out runs/video-v2/fresh",
+    "exit": 1,
+    "seconds": 14.914,
+    "stdout": "codex-cli 0.171.0-alpha.13  |  gpt-6.2-sol  |  5 fresh requests\nTC14  run 1  PASS       5.46 s  Blank contact and insurance\nTC04  run 1  FAIL       6.44 s  Glare and tilt\nTC16  run 1  PASS       4.72 s  Three fresh requests\nTC16  run 2  PASS       4.88 s  Three fresh requests\nTC16  run 3  PASS       4.65 s  Three fresh requests\n"
+  },
+  {
+    "stage": "inspect",
+    "command": "python3 automation/demo.py inspect --work runs/video-v2",
+    "exit": 0,
+    "seconds": 0.116,
+    "stdout": "TC04  11/12 field checks passed\n  asthma  expected \"[illegible]\"  returned null\nTC14  12/12 field checks passed\n  email  expected null  returned null\n  secondary_insurance  expected null  returned null\nFresh take: {'FAIL': 1, 'PASS': 4}\nTC16: 7/7 fields identical across three fresh runs\n"
+  },
+  {
+    "stage": "results",
+    "command": "python3 automation/demo.py results --work runs/video-v2",
+    "exit": 0,
+    "seconds": 0.089,
+    "stdout": "codex-cli {'PASS': 45, 'FAIL': 3}\n  Correct field checks: 447 / 450\n  TC16 agreement: 7 / 7\n  TC04 run 1 asthma = null\n  TC04 run 2 asthma = null\n  TC04 run 3 asthma = null\nchatgpt-web {'PASS': 14, 'FAIL': 1, 'BLOCKED': 1}\n  Correct field checks: 142 / 143\n  TC04 run 1 asthma = false\n"
+  },
+  {
+    "stage": "costs",
+    "command": "python3 automation/demo.py costs --work runs/video-v2",
+    "exit": 0,
+    "seconds": 0.133,
+    "stdout": "MEASURED COST / frozen Codex campaign\n48 requests; 293.864 aggregate request seconds\nMedian 5.764 seconds per request\nInput tokens 698,282   cached 518,656   output 5,398\nNo per-request dollar charge or labor time was measured.\n\nSCRIPT                 SOURCE LINES    MAX BRANCH SCORE\ngenerate.py              117             18\nrun_codex.py              88             21\noracle.py                 60             12\nscore.py                  85             40\n\nCoverage: 16 scenarios, 15 context/input pairs, 14 images.\n"
+  }
+]

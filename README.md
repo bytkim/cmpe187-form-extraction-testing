@@ -10,10 +10,10 @@ This local repository tests whether an image reader can extract two fictional fo
 
 | File or folder | Contents |
 | --- | --- |
-| Test_Automation_Report.pdf / .docx | Six-page report and editable original |
+| [Report PDF](Test_Automation_Report.pdf) / [Word original](Test_Automation_Report.docx) | Six-page report and editable original |
 | Presentation.pptx | Seven slides with presenter notes |
-| Execution_Demo.mp4 | Narrated execution demonstration with captured terminal output |
-| Demo_Script.txt | Timestamped script and exact demo commands |
+| [Watch the execution demo](Execution_Demo.mp4) | Chaptered screen recording with a live terminal, a before-and-after augmentation, five fresh Codex requests, the simulator, cost and script complexity. Includes English captions. |
+| [Demo script and commands](Demo_Script.txt) | Timestamped script and exact demo commands |
 | automation/ | Executable Python scripts, public data sample, fonts, case table and generated fixtures |
 | evidence/ | Original answer text and individual request receipts. The filmed take is separate. |
 | statistics/ | Per-field and per-attempt CSV files, summaries and measured script complexity |
@@ -86,4 +86,4 @@ The public data, generated capture proxies and two-record evaluation limit gener
 - The attached team's Deliverable 2(A), sections 2–3, supplies the 16-case design, original prompts and fictional form values. Additional email and insurance fields make the blank-field case testable.
 - E. Alpaydin and C. Kaynak, *Optical Recognition of Handwritten Digits*, UCI Machine Learning Repository, 1998. CC BY 4.0. TC11 scales the selected grayscale samples and composes them with punctuation. Source row numbers and the full member digest are in `automation/data/digits.json`. [Dataset](https://doi.org/10.24432/C50P49) · [License](https://creativecommons.org/licenses/by/4.0/)
 - Lato, Kalam and Dancing Script are distributed with their OFL notices in `automation/data/fonts/`. The two handwriting styles approximate lettering. The phone digits are sampled handwriting. [Google Fonts source](https://github.com/google/fonts)
-- The demo uses synthesized narration and a timestamped capture of four real subprocesses. Its additional inference receipt and terminal events are in `evidence/demo-take/`. Times in the receipt files are UTC.
+- The current demo records the terminal and the local simulator. It downloads the UCI samples, generates the fixtures, verifies two augmentations, runs five fresh Codex requests, inspects field discrepancies, replays the campaign, and computes cost and complexity. Four of the five new requests passed and TC04 failed. The new receipts and seven console commands are in `evidence/demo-v2/`. The original one-request take remains in `evidence/demo-take/`. Both are separate from the 48-request campaign. Narration is synthesized, and receipt times are UTC.
