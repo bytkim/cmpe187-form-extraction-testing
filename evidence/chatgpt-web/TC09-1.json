@@ -1,0 +1,11 @@
+{
+  "id": "TC09",
+  "rep": 1,
+  "backend": "ChatGPT web / default / temporary chat",
+  "sha256": "e83f57dedf2d222f0e0b64c67245970248ff23176ef01f9e72b1fe9f307852ce",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "started_utc": "2026-11-23T01:09:24.040Z",
+  "elapsed_s": 6.255,
+  "raw": "{\n  \"name\": \"[illegible]\",\n  \"address\": \"[illegible]\",\n  \"phone\": \"[illegible]\",\n  \"position\": \"[illegible]\",\n  \"start_date\": \"[illegible]\",\n  \"salary\": \"[illegible]\",\n  \"work_authorized\": \"[illegible]\"\n}",
+  "visible_text": "JSON\n{\n  \"name\": \"[illegible]\",\n  \"address\": \"[illegible]\",\n  \"phone\": \"[illegible]\",\n  \"position\": \"[illegible]\",\n  \"start_date\": \"[illegible]\",\n  \"salary\": \"[illegible]\",\n  \"work_authorized\": \"[illegible]\"\n}"
+}

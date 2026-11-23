@@ -1,0 +1,9 @@
+{
+  "reviewer": "gpt-6.2-sol",
+  "role": "visual review of a saved web response",
+  "case": "TC04",
+  "sha256": "ca7ab30cf9883d4a428a33bdcebd251e1e97b78d7b140cee65dd3826226e2da6",
+  "prompt": "Visually review the response below against the attached form. For each field, confirm that the supplied answer is supported by visible evidence. Use the original prompt's rules. Check whether each checkbox border and its mark area are visible before accepting a Boolean. Return one JSON object with verdict PASS or FAIL and discrepancies, an array of field names and explanations. Do not use tools.\nOriginal prompt:\nExtract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, dob, phone, allergy, medication_1, medication_2, email, secondary_insurance, high_blood_pressure, diabetes, asthma, heart_disease. Use true/false for boxes. Preserve printed text and punctuation.\nResponse to inspect:\n{\n  \"name\": \"James Okafor\",\n  \"dob\": \"07/22/1988\",\n  \"phone\": \"(669) 555-0187\",\n  \"allergy\": \"Penicillin\",\n  \"medication_1\": \"Lisinopril 10 mg daily\",\n  \"medication_2\": \"Metformin 500 mg twice daily\",\n  \"email\": \"james@example.com\",\n  \"secondary_insurance\": \"Sample Plan B\",\n  \"high_blood_pressure\": true,\n  \"diabetes\": true,\n  \"asthma\": false,\n  \"heart_disease\": false\n}",
+  "raw": "{\n  \"verdict\": \"FAIL\",\n  \"discrepancies\": [\n    {\n      \"field\": \"asthma\",\n      \"explanation\": \"No checkbox border or mark area is visible in the Asthma row. The field is blank and should be null.\"\n    }\n  ]\n}",
+  "seconds": 4.828
+}

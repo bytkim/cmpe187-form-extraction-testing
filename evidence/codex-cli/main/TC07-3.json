@@ -1,0 +1,27 @@
+{
+  "id": "TC07",
+  "rep": 3,
+  "sha256": "739474d783ef17d24bb0fc58d5232c5b0405ef9d686098c88e69befbe3b8d6a1",
+  "prompt": "What does this form say?",
+  "backend": "Codex CLI",
+  "model": "gpt-6.2-sol",
+  "started_utc": "2026-11-23T01:19:09.956889+00:00",
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 14644,
+    "cached_input_tokens": 12928,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 130,
+    "reasoning_output_tokens": 0
+  },
+  "raw": "## Medical Intake\n\n**Patient information**\n\n| Field | Entry |\n|---|---|\n| Full name | James Okafor |\n| Date of birth | 07/22/1988 |\n| Phone | (669) 555-0187 |\n| Allergy | Penicillin |\n| Medication 1 | Lisinopril 10 mg daily |\n| Medication 2 | Metformin 500 mg twice daily |\n| Email | james@example.com |\n| Secondary insurance | Sample Plan B |\n| High blood pressure | Checked |\n| Diabetes | Checked |\n| Asthma | Unchecked |\n| Heart disease | Unchecked |",
+  "elapsed_s": 5.099
+}

@@ -1,0 +1,96 @@
+{
+  "codex": {
+    "status": {
+      "PASS": 45,
+      "FAIL": 3
+    },
+    "scenario_ids": [
+      "TC01",
+      "TC02",
+      "TC03",
+      "TC04",
+      "TC05",
+      "TC06",
+      "TC07",
+      "TC08",
+      "TC09",
+      "TC10",
+      "TC11",
+      "TC12",
+      "TC13",
+      "TC14",
+      "TC15",
+      "TC16"
+    ],
+    "correct_fields": 447,
+    "total_fields": 450,
+    "errors": {
+      "O2": 3
+    },
+    "observed_classes": [
+      "O1",
+      "O2",
+      "O5"
+    ],
+    "conventional_pass": 48,
+    "seconds": 293.864,
+    "agreement": {
+      "identical": 7,
+      "total": 7,
+      "meets_95": true,
+      "all_three_correct": true
+    }
+  },
+  "median_request_s": 5.7645,
+  "batch_wall_s": {
+    "consistency": 16.854,
+    "main": 94.099
+  },
+  "token_totals": {
+    "input_tokens": 698282,
+    "cached_input_tokens": 518656,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5398,
+    "reasoning_output_tokens": 0
+  },
+  "unique_images": 14,
+  "unique_pairs": 15,
+  "two_case_grading_ms": 0.010243375028949231,
+  "scripts": {
+    "generate.py": {
+      "nonblank_noncomment_lines": 117,
+      "function_branch_scores": {
+        "read": 1,
+        "font": 1,
+        "print_phone": 4,
+        "make_page": 18,
+        "transform": 6,
+        "generate": 9
+      }
+    },
+    "run_codex.py": {
+      "nonblank_noncomment_lines": 88,
+      "function_branch_scores": {
+        "invoke": 21,
+        "main": 12,
+        "execute": 1
+      }
+    },
+    "oracle.py": {
+      "nonblank_noncomment_lines": 60,
+      "function_branch_scores": {
+        "unique_pairs": 2,
+        "parse": 3,
+        "field_check": 7,
+        "assess": 12
+      }
+    },
+    "score.py": {
+      "nonblank_noncomment_lines": 85,
+      "function_branch_scores": {
+        "write_csv": 2,
+        "evaluate": 40
+      }
+    }
+  }
+}

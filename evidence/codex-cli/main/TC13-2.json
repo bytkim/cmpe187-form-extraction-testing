@@ -1,0 +1,27 @@
+{
+  "id": "TC13",
+  "rep": 2,
+  "sha256": "2ad010e2f92692a7fd5abaf1f46ad65115608574c5916819dc8d2fc6e130c36c",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, dob, phone, allergy, medication_1, medication_2, email, secondary_insurance, high_blood_pressure, diabetes, asthma, heart_disease. Use true/false for boxes. Preserve printed text and punctuation.",
+  "backend": "Codex CLI",
+  "model": "gpt-6.2-sol",
+  "started_utc": "2026-11-23T01:19:46.659843+00:00",
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 14722,
+    "cached_input_tokens": 12928,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 136,
+    "reasoning_output_tokens": 0
+  },
+  "raw": "{\n  \"name\": \"James Okafor\",\n  \"dob\": \"07/22/1988\",\n  \"phone\": \"(669) 555-0187\",\n  \"allergy\": \"Penicillin\",\n  \"medication_1\": \"Lisinopril 10 mg daily\",\n  \"medication_2\": \"Metformin 500 mg twice daily\",\n  \"email\": \"james@example.com\",\n  \"secondary_insurance\": \"Sample Plan B\",\n  \"high_blood_pressure\": true,\n  \"diabetes\": true,\n  \"asthma\": false,\n  \"heart_disease\": true\n}",
+  "elapsed_s": 6.135
+}

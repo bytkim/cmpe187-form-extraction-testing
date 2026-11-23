@@ -1,0 +1,24 @@
+FORM-CVS 1   |   Deliverable 3
+Form extraction test automation
+Thomas Kim and Sai Thaw Di Nine
+
+00:00  Data discovery and setup
+The two forms in this test contain fictional records. For the handwritten phone number, the setup script opens the University of California Irvine digit dataset and checks all three thousand eight hundred twenty-three training rows. It keeps the first labeled example of each digit. In the phone field shown here, the individual digit shapes came from real handwriting. The number itself is fictional.
+Command: python3 demo.py setup --work demo-work
+
+00:23  Generating the test cases
+Each row combines a capture context, an input class, and an expected output. The generator prints those identifiers and hashes the image. Sixteen cases use fourteen different images. We reuse the medical baseline with a vague prompt, and reuse the job baseline to check consistency. This example rotates the medical form ten degrees after flash glare erases one checkbox.
+Command: python3 demo.py generate --work demo-work
+
+00:48  Running Codex CLI
+This is a fresh execution of the blank-field test. The runner creates an empty working directory and copies only the image into it. It starts Codex with the image and the structured extraction prompt. The expected answers stay with the local scorer. The two blank lines on this form are email and secondary insurance. Both must come back as JSON null. Every other field, including both medication doses, must still match. The terminal records the actual elapsed time and the result of all twelve checks.
+Command: python3 demo.py live --work demo-work
+
+01:30  Comparing the recorded results
+The scorer now reads the saved responses. Codex passed forty-five of forty-eight attempts, and all seven fields agreed in the three fresh repeatability sessions. All three failures occurred under glare. Codex returned null for the missing checkbox mark. The prompt calls for illegible when an image hides the answer. ChatGPT web also missed that distinction and returned false. It completed fifteen scenarios before its upload limit blocked the last one.
+Command: python3 demo.py results --work demo-work
+
+01:57  Inspecting a failure
+The local simulator puts the original image next to its expected and observed fields. Choose a case, execution path, and attempt to inspect the mismatch. The run button makes a fresh Codex request and preserves it separately. The example on screen shows why simply checking for valid JSON would have missed the problem.
+
+Audio uses synthesized narration. Terminal output is a timestamped capture of local subprocesses. The demo take is separate from the reported campaign.

@@ -1,0 +1,11 @@
+{
+  "id": "TC14",
+  "rep": 1,
+  "backend": "ChatGPT web / default / temporary chat",
+  "sha256": "1e7f54e37bd28b8c3594e9d3c349f6a6c0ad3f2bdb0d1ee49fb775ebaa4a5813",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, dob, phone, allergy, medication_1, medication_2, email, secondary_insurance, high_blood_pressure, diabetes, asthma, heart_disease. Use true/false for boxes. Preserve printed text and punctuation.",
+  "started_utc": "2026-11-23T01:15:05.969Z",
+  "elapsed_s": 5.178,
+  "raw": "{\n  \"name\": \"James Okafor\",\n  \"dob\": \"07/22/1988\",\n  \"phone\": \"(669) 555-0187\",\n  \"allergy\": \"Penicillin\",\n  \"medication_1\": \"Lisinopril 10 mg daily\",\n  \"medication_2\": \"Metformin 500 mg twice daily\",\n  \"email\": null,\n  \"secondary_insurance\": null,\n  \"high_blood_pressure\": true,\n  \"diabetes\": true,\n  \"asthma\": false,\n  \"heart_disease\": false\n}",
+  "visible_text": "JSON\n{\n  \"name\": \"James Okafor\",\n  \"dob\": \"07/22/1988\",\n  \"phone\": \"(669) 555-0187\",\n  \"allergy\": \"Penicillin\",\n  \"medication_1\": \"Lisinopril 10 mg daily\",\n  \"medication_2\": \"Metformin 500 mg twice daily\",\n  \"email\": null,\n  \"secondary_insurance\": null,\n  \"high_blood_pressure\": true,\n  \"diabetes\": true,\n  \"asthma\": false,\n  \"heart_disease\": false\n}"
+}

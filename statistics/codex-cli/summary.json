@@ -1,0 +1,42 @@
+{
+  "status": {
+    "PASS": 45,
+    "FAIL": 3
+  },
+  "scenario_ids": [
+    "TC01",
+    "TC02",
+    "TC03",
+    "TC04",
+    "TC05",
+    "TC06",
+    "TC07",
+    "TC08",
+    "TC09",
+    "TC10",
+    "TC11",
+    "TC12",
+    "TC13",
+    "TC14",
+    "TC15",
+    "TC16"
+  ],
+  "correct_fields": 447,
+  "total_fields": 450,
+  "errors": {
+    "O2": 3
+  },
+  "observed_classes": [
+    "O1",
+    "O2",
+    "O5"
+  ],
+  "conventional_pass": 48,
+  "seconds": 293.864,
+  "agreement": {
+    "identical": 7,
+    "total": 7,
+    "meets_95": true,
+    "all_three_correct": true
+  }
+}

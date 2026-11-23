@@ -1,0 +1,451 @@
+id,rep,key,expected,observed,class,ok
+TC16,1,name,Maria Nguyen,Maria Nguyen,O1,True
+TC16,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC16,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC16,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC16,1,start_date,06/01/2026,06/01/2026,O1,True
+TC16,1,salary,"$72,000","$72,000",O1,True
+TC16,1,work_authorized,True,True,O1,True
+TC16,2,name,Maria Nguyen,Maria Nguyen,O1,True
+TC16,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC16,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC16,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC16,2,start_date,06/01/2026,06/01/2026,O1,True
+TC16,2,salary,"$72,000","$72,000",O1,True
+TC16,2,work_authorized,True,True,O1,True
+TC16,3,name,Maria Nguyen,Maria Nguyen,O1,True
+TC16,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC16,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC16,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC16,3,start_date,06/01/2026,06/01/2026,O1,True
+TC16,3,salary,"$72,000","$72,000",O1,True
+TC16,3,work_authorized,True,True,O1,True
+TC01,1,name,Maria Nguyen,Maria Nguyen,O1,True
+TC01,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC01,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC01,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC01,1,start_date,06/01/2026,06/01/2026,O1,True
+TC01,1,salary,"$72,000","$72,000",O1,True
+TC01,1,work_authorized,True,True,O1,True
+TC01,2,name,Maria Nguyen,Maria Nguyen,O1,True
+TC01,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC01,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC01,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC01,2,start_date,06/01/2026,06/01/2026,O1,True
+TC01,2,salary,"$72,000","$72,000",O1,True
+TC01,2,work_authorized,True,True,O1,True
+TC01,3,name,Maria Nguyen,Maria Nguyen,O1,True
+TC01,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC01,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC01,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC01,3,start_date,06/01/2026,06/01/2026,O1,True
+TC01,3,salary,"$72,000","$72,000",O1,True
+TC01,3,work_authorized,True,True,O1,True
+TC02,1,name,James Okafor,James Okafor,O1,True
+TC02,1,dob,07/22/1988,07/22/1988,O1,True
+TC02,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC02,1,allergy,Penicillin,Penicillin,O1,True
+TC02,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC02,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC02,1,email,james@example.com,james@example.com,O1,True
+TC02,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC02,1,high_blood_pressure,True,True,O1,True
+TC02,1,diabetes,True,True,O1,True
+TC02,1,asthma,False,False,O1,True
+TC02,1,heart_disease,False,False,O1,True
+TC02,2,name,James Okafor,James Okafor,O1,True
+TC02,2,dob,07/22/1988,07/22/1988,O1,True
+TC02,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC02,2,allergy,Penicillin,Penicillin,O1,True
+TC02,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC02,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC02,2,email,james@example.com,james@example.com,O1,True
+TC02,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC02,2,high_blood_pressure,True,True,O1,True
+TC02,2,diabetes,True,True,O1,True
+TC02,2,asthma,False,False,O1,True
+TC02,2,heart_disease,False,False,O1,True
+TC02,3,name,James Okafor,James Okafor,O1,True
+TC02,3,dob,07/22/1988,07/22/1988,O1,True
+TC02,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC02,3,allergy,Penicillin,Penicillin,O1,True
+TC02,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC02,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC02,3,email,james@example.com,james@example.com,O1,True
+TC02,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC02,3,high_blood_pressure,True,True,O1,True
+TC02,3,diabetes,True,True,O1,True
+TC02,3,asthma,False,False,O1,True
+TC02,3,heart_disease,False,False,O1,True
+TC03,1,name,James Okafor,James Okafor,O1,True
+TC03,1,dob,07/22/1988,07/22/1988,O1,True
+TC03,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC03,1,allergy,Penicillin,Penicillin,O1,True
+TC03,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC03,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC03,1,email,james@example.com,james@example.com,O1,True
+TC03,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC03,1,high_blood_pressure,True,True,O1,True
+TC03,1,diabetes,True,True,O1,True
+TC03,1,asthma,False,False,O1,True
+TC03,1,heart_disease,False,False,O1,True
+TC03,2,name,James Okafor,James Okafor,O1,True
+TC03,2,dob,07/22/1988,07/22/1988,O1,True
+TC03,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC03,2,allergy,Penicillin,Penicillin,O1,True
+TC03,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC03,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC03,2,email,james@example.com,james@example.com,O1,True
+TC03,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC03,2,high_blood_pressure,True,True,O1,True
+TC03,2,diabetes,True,True,O1,True
+TC03,2,asthma,False,False,O1,True
+TC03,2,heart_disease,False,False,O1,True
+TC03,3,name,James Okafor,James Okafor,O1,True
+TC03,3,dob,07/22/1988,07/22/1988,O1,True
+TC03,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC03,3,allergy,Penicillin,Penicillin,O1,True
+TC03,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC03,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC03,3,email,james@example.com,james@example.com,O1,True
+TC03,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC03,3,high_blood_pressure,True,True,O1,True
+TC03,3,diabetes,True,True,O1,True
+TC03,3,asthma,False,False,O1,True
+TC03,3,heart_disease,False,False,O1,True
+TC04,1,name,James Okafor,James Okafor,O1,True
+TC04,1,dob,07/22/1988,07/22/1988,O1,True
+TC04,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC04,1,allergy,Penicillin,Penicillin,O1,True
+TC04,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC04,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC04,1,email,james@example.com,james@example.com,O1,True
+TC04,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC04,1,high_blood_pressure,True,True,O1,True
+TC04,1,diabetes,True,True,O1,True
+TC04,1,asthma,[illegible],,O2,False
+TC04,1,heart_disease,False,False,O1,True
+TC04,2,name,James Okafor,James Okafor,O1,True
+TC04,2,dob,07/22/1988,07/22/1988,O1,True
+TC04,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC04,2,allergy,Penicillin,Penicillin,O1,True
+TC04,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC04,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC04,2,email,james@example.com,james@example.com,O1,True
+TC04,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC04,2,high_blood_pressure,True,True,O1,True
+TC04,2,diabetes,True,True,O1,True
+TC04,2,asthma,[illegible],,O2,False
+TC04,2,heart_disease,False,False,O1,True
+TC04,3,name,James Okafor,James Okafor,O1,True
+TC04,3,dob,07/22/1988,07/22/1988,O1,True
+TC04,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC04,3,allergy,Penicillin,Penicillin,O1,True
+TC04,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC04,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC04,3,email,james@example.com,james@example.com,O1,True
+TC04,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC04,3,high_blood_pressure,True,True,O1,True
+TC04,3,diabetes,True,True,O1,True
+TC04,3,asthma,[illegible],,O2,False
+TC04,3,heart_disease,False,False,O1,True
+TC05,1,name,Maria Nguyen,Maria Nguyen,O1,True
+TC05,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC05,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC05,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC05,1,start_date,06/01/2026,06/01/2026,O1,True
+TC05,1,salary,"$72,000","$72,000",O1,True
+TC05,1,work_authorized,True,True,O1,True
+TC05,2,name,Maria Nguyen,Maria Nguyen,O1,True
+TC05,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC05,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC05,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC05,2,start_date,06/01/2026,06/01/2026,O1,True
+TC05,2,salary,"$72,000","$72,000",O1,True
+TC05,2,work_authorized,True,True,O1,True
+TC05,3,name,Maria Nguyen,Maria Nguyen,O1,True
+TC05,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC05,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC05,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC05,3,start_date,06/01/2026,06/01/2026,O1,True
+TC05,3,salary,"$72,000","$72,000",O1,True
+TC05,3,work_authorized,True,True,O1,True
+TC06,1,name,James Okafor,James Okafor,O1,True
+TC06,1,dob,07/22/1988,07/22/1988,O1,True
+TC06,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC06,1,allergy,Penicillin,Penicillin,O1,True
+TC06,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC06,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC06,1,email,james@example.com,james@example.com,O1,True
+TC06,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC06,1,high_blood_pressure,True,True,O1,True
+TC06,1,diabetes,True,True,O1,True
+TC06,1,asthma,False,False,O1,True
+TC06,1,heart_disease,False,False,O1,True
+TC06,2,name,James Okafor,James Okafor,O1,True
+TC06,2,dob,07/22/1988,07/22/1988,O1,True
+TC06,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC06,2,allergy,Penicillin,Penicillin,O1,True
+TC06,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC06,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC06,2,email,james@example.com,james@example.com,O1,True
+TC06,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC06,2,high_blood_pressure,True,True,O1,True
+TC06,2,diabetes,True,True,O1,True
+TC06,2,asthma,False,False,O1,True
+TC06,2,heart_disease,False,False,O1,True
+TC06,3,name,James Okafor,James Okafor,O1,True
+TC06,3,dob,07/22/1988,07/22/1988,O1,True
+TC06,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC06,3,allergy,Penicillin,Penicillin,O1,True
+TC06,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC06,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC06,3,email,james@example.com,james@example.com,O1,True
+TC06,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC06,3,high_blood_pressure,True,True,O1,True
+TC06,3,diabetes,True,True,O1,True
+TC06,3,asthma,False,False,O1,True
+TC06,3,heart_disease,False,False,O1,True
+TC07,1,name,James Okafor,James Okafor,O1,True
+TC07,1,dob,07/22/1988,07/22/1988,O1,True
+TC07,1,allergy,Penicillin,Penicillin,O1,True
+TC07,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC07,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC07,2,name,James Okafor,James Okafor,O1,True
+TC07,2,dob,07/22/1988,07/22/1988,O1,True
+TC07,2,allergy,Penicillin,Penicillin,O1,True
+TC07,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC07,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC07,3,name,James Okafor,James Okafor,O1,True
+TC07,3,dob,07/22/1988,07/22/1988,O1,True
+TC07,3,allergy,Penicillin,Penicillin,O1,True
+TC07,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC07,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC08,1,name,Maria Nguyen,Maria Nguyen,O1,True
+TC08,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC08,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC08,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC08,1,start_date,06/01/2026,06/01/2026,O1,True
+TC08,1,salary,"$72,000","$72,000",O1,True
+TC08,1,work_authorized,True,True,O1,True
+TC08,2,name,Maria Nguyen,Maria Nguyen,O1,True
+TC08,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC08,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC08,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC08,2,start_date,06/01/2026,06/01/2026,O1,True
+TC08,2,salary,"$72,000","$72,000",O1,True
+TC08,2,work_authorized,True,True,O1,True
+TC08,3,name,Maria Nguyen,Maria Nguyen,O1,True
+TC08,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC08,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC08,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC08,3,start_date,06/01/2026,06/01/2026,O1,True
+TC08,3,salary,"$72,000","$72,000",O1,True
+TC08,3,work_authorized,True,True,O1,True
+TC09,1,name,[illegible],[illegible],O5,True
+TC09,1,address,[illegible],[illegible],O5,True
+TC09,1,phone,[illegible],[illegible],O5,True
+TC09,1,position,[illegible],[illegible],O5,True
+TC09,1,start_date,[illegible],[illegible],O5,True
+TC09,1,salary,[illegible],[illegible],O5,True
+TC09,1,work_authorized,[illegible],[illegible],O5,True
+TC09,2,name,[illegible],[illegible],O5,True
+TC09,2,address,[illegible],[illegible],O5,True
+TC09,2,phone,[illegible],[illegible],O5,True
+TC09,2,position,[illegible],[illegible],O5,True
+TC09,2,start_date,[illegible],[illegible],O5,True
+TC09,2,salary,[illegible],[illegible],O5,True
+TC09,2,work_authorized,[illegible],[illegible],O5,True
+TC09,3,name,[illegible],[illegible],O5,True
+TC09,3,address,[illegible],[illegible],O5,True
+TC09,3,phone,[illegible],[illegible],O5,True
+TC09,3,position,[illegible],[illegible],O5,True
+TC09,3,start_date,[illegible],[illegible],O5,True
+TC09,3,salary,[illegible],[illegible],O5,True
+TC09,3,work_authorized,[illegible],[illegible],O5,True
+TC10,1,name,James Okafor,James Okafor,O1,True
+TC10,1,dob,07/22/1988,07/22/1988,O1,True
+TC10,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC10,1,allergy,Penicillin,Penicillin,O1,True
+TC10,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC10,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC10,1,email,james@example.com,james@example.com,O1,True
+TC10,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC10,1,high_blood_pressure,True,True,O1,True
+TC10,1,diabetes,True,True,O1,True
+TC10,1,asthma,False,False,O1,True
+TC10,1,heart_disease,False,False,O1,True
+TC10,2,name,James Okafor,James Okafor,O1,True
+TC10,2,dob,07/22/1988,07/22/1988,O1,True
+TC10,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC10,2,allergy,Penicillin,Penicillin,O1,True
+TC10,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC10,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC10,2,email,james@example.com,james@example.com,O1,True
+TC10,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC10,2,high_blood_pressure,True,True,O1,True
+TC10,2,diabetes,True,True,O1,True
+TC10,2,asthma,False,False,O1,True
+TC10,2,heart_disease,False,False,O1,True
+TC10,3,name,James Okafor,James Okafor,O1,True
+TC10,3,dob,07/22/1988,07/22/1988,O1,True
+TC10,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC10,3,allergy,Penicillin,Penicillin,O1,True
+TC10,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC10,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC10,3,email,james@example.com,james@example.com,O1,True
+TC10,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC10,3,high_blood_pressure,True,True,O1,True
+TC10,3,diabetes,True,True,O1,True
+TC10,3,asthma,False,False,O1,True
+TC10,3,heart_disease,False,False,O1,True
+TC11,1,name,Maria Nguyen,Maria Nguyen,O1,True
+TC11,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC11,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC11,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC11,1,start_date,06/01/2026,06/01/2026,O1,True
+TC11,1,salary,"$72,000","$72,000",O1,True
+TC11,1,work_authorized,True,True,O1,True
+TC11,2,name,Maria Nguyen,Maria Nguyen,O1,True
+TC11,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC11,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC11,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC11,2,start_date,06/01/2026,06/01/2026,O1,True
+TC11,2,salary,"$72,000","$72,000",O1,True
+TC11,2,work_authorized,True,True,O1,True
+TC11,3,name,Maria Nguyen,Maria Nguyen,O1,True
+TC11,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC11,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC11,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC11,3,start_date,06/01/2026,06/01/2026,O1,True
+TC11,3,salary,"$72,000","$72,000",O1,True
+TC11,3,work_authorized,True,True,O1,True
+TC12,1,name,James Okafor,James Okafor,O1,True
+TC12,1,dob,07/22/1988,07/22/1988,O1,True
+TC12,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC12,1,allergy,Penicillin,Penicillin,O1,True
+TC12,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC12,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC12,1,email,james@example.com,james@example.com,O1,True
+TC12,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC12,1,high_blood_pressure,True,True,O1,True
+TC12,1,diabetes,True,True,O1,True
+TC12,1,asthma,False,False,O1,True
+TC12,1,heart_disease,False,False,O1,True
+TC12,2,name,James Okafor,James Okafor,O1,True
+TC12,2,dob,07/22/1988,07/22/1988,O1,True
+TC12,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC12,2,allergy,Penicillin,Penicillin,O1,True
+TC12,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC12,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC12,2,email,james@example.com,james@example.com,O1,True
+TC12,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC12,2,high_blood_pressure,True,True,O1,True
+TC12,2,diabetes,True,True,O1,True
+TC12,2,asthma,False,False,O1,True
+TC12,2,heart_disease,False,False,O1,True
+TC12,3,name,James Okafor,James Okafor,O1,True
+TC12,3,dob,07/22/1988,07/22/1988,O1,True
+TC12,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC12,3,allergy,Penicillin,Penicillin,O1,True
+TC12,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC12,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC12,3,email,james@example.com,james@example.com,O1,True
+TC12,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC12,3,high_blood_pressure,True,True,O1,True
+TC12,3,diabetes,True,True,O1,True
+TC12,3,asthma,False,False,O1,True
+TC12,3,heart_disease,False,False,O1,True
+TC13,1,name,James Okafor,James Okafor,O1,True
+TC13,1,dob,07/22/1988,07/22/1988,O1,True
+TC13,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC13,1,allergy,Penicillin,Penicillin,O1,True
+TC13,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC13,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC13,1,email,james@example.com,james@example.com,O1,True
+TC13,1,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC13,1,high_blood_pressure,True,True,O1,True
+TC13,1,diabetes,True,True,O1,True
+TC13,1,asthma,False,False,O1,True
+TC13,1,heart_disease,True,True,O1,True
+TC13,2,name,James Okafor,James Okafor,O1,True
+TC13,2,dob,07/22/1988,07/22/1988,O1,True
+TC13,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC13,2,allergy,Penicillin,Penicillin,O1,True
+TC13,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC13,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC13,2,email,james@example.com,james@example.com,O1,True
+TC13,2,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC13,2,high_blood_pressure,True,True,O1,True
+TC13,2,diabetes,True,True,O1,True
+TC13,2,asthma,False,False,O1,True
+TC13,2,heart_disease,True,True,O1,True
+TC13,3,name,James Okafor,James Okafor,O1,True
+TC13,3,dob,07/22/1988,07/22/1988,O1,True
+TC13,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC13,3,allergy,Penicillin,Penicillin,O1,True
+TC13,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC13,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC13,3,email,james@example.com,james@example.com,O1,True
+TC13,3,secondary_insurance,Sample Plan B,Sample Plan B,O1,True
+TC13,3,high_blood_pressure,True,True,O1,True
+TC13,3,diabetes,True,True,O1,True
+TC13,3,asthma,False,False,O1,True
+TC13,3,heart_disease,True,True,O1,True
+TC14,1,name,James Okafor,James Okafor,O1,True
+TC14,1,dob,07/22/1988,07/22/1988,O1,True
+TC14,1,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC14,1,allergy,Penicillin,Penicillin,O1,True
+TC14,1,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC14,1,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC14,1,email,,,O1,True
+TC14,1,secondary_insurance,,,O1,True
+TC14,1,high_blood_pressure,True,True,O1,True
+TC14,1,diabetes,True,True,O1,True
+TC14,1,asthma,False,False,O1,True
+TC14,1,heart_disease,False,False,O1,True
+TC14,2,name,James Okafor,James Okafor,O1,True
+TC14,2,dob,07/22/1988,07/22/1988,O1,True
+TC14,2,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC14,2,allergy,Penicillin,Penicillin,O1,True
+TC14,2,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC14,2,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC14,2,email,,,O1,True
+TC14,2,secondary_insurance,,,O1,True
+TC14,2,high_blood_pressure,True,True,O1,True
+TC14,2,diabetes,True,True,O1,True
+TC14,2,asthma,False,False,O1,True
+TC14,2,heart_disease,False,False,O1,True
+TC14,3,name,James Okafor,James Okafor,O1,True
+TC14,3,dob,07/22/1988,07/22/1988,O1,True
+TC14,3,phone,(669) 555-0187,(669) 555-0187,O1,True
+TC14,3,allergy,Penicillin,Penicillin,O1,True
+TC14,3,medication_1,Lisinopril 10 mg daily,Lisinopril 10 mg daily,O1,True
+TC14,3,medication_2,Metformin 500 mg twice daily,Metformin 500 mg twice daily,O1,True
+TC14,3,email,,,O1,True
+TC14,3,secondary_insurance,,,O1,True
+TC14,3,high_blood_pressure,True,True,O1,True
+TC14,3,diabetes,True,True,O1,True
+TC14,3,asthma,False,False,O1,True
+TC14,3,heart_disease,False,False,O1,True
+TC15,1,name,José Muñoz-Ortega,José Muñoz-Ortega,O1,True
+TC15,1,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC15,1,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC15,1,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC15,1,start_date,06/01/2026,06/01/2026,O1,True
+TC15,1,salary,"$72,000","$72,000",O1,True
+TC15,1,work_authorized,True,True,O1,True
+TC15,2,name,José Muñoz-Ortega,José Muñoz-Ortega,O1,True
+TC15,2,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC15,2,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC15,2,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC15,2,start_date,06/01/2026,06/01/2026,O1,True
+TC15,2,salary,"$72,000","$72,000",O1,True
+TC15,2,work_authorized,True,True,O1,True
+TC15,3,name,José Muñoz-Ortega,José Muñoz-Ortega,O1,True
+TC15,3,address,"1452 Alum Rock Ave, San Jose, CA 95116","1452 Alum Rock Ave, San Jose, CA 95116",O1,True
+TC15,3,phone,(408) 555-0142,(408) 555-0142,O1,True
+TC15,3,position,Junior Software Engineer,Junior Software Engineer,O1,True
+TC15,3,start_date,06/01/2026,06/01/2026,O1,True
+TC15,3,salary,"$72,000","$72,000",O1,True
+TC15,3,work_authorized,True,True,O1,True

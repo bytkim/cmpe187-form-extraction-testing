@@ -1,0 +1,11 @@
+{
+  "id": "TC07",
+  "rep": 1,
+  "backend": "ChatGPT web / default / temporary chat",
+  "sha256": "739474d783ef17d24bb0fc58d5232c5b0405ef9d686098c88e69befbe3b8d6a1",
+  "prompt": "What does this form say?",
+  "started_utc": "2026-11-23T01:08:32.431Z",
+  "elapsed_s": 5.209,
+  "raw": "MEDICAL INTAKE\n\nPatient information\n\nField\n\n\t\n\nValue\n\n\n\n\nFull name\n\n\t\n\nJames Okafor\n\n\n\n\nDate of birth\n\n\t\n\n07/22/1988\n\n\n\n\nPhone\n\n\t\n\n(669) 555-0187\n\n\n\n\nAllergy\n\n\t\n\nPenicillin\n\n\n\n\nMedication 1\n\n\t\n\nLisinopril 10 mg daily\n\n\n\n\nMedication 2\n\n\t\n\nMetformin 500 mg twice daily\n\n\n\n\nEmail\n\n\t\n\njames@example.com\n\n\n\n\nSecondary insurance\n\n\t\n\nSample Plan B\n\n\n\n\nHigh blood pressure\n\n\t\n\nYes (checked)\n\n\n\n\nDiabetes\n\n\t\n\nYes (checked)\n\n\n\n\nAsthma\n\n\t\n\nNo (unchecked)\n\n\n\n\nHeart disease\n\n\t\n\nNo (unchecked)",
+  "visible_text": "MEDICAL INTAKE\n\nPatient information\n\nField\n\n\t\n\nValue\n\n\n\n\nFull name\n\n\t\n\nJames Okafor\n\n\n\n\nDate of birth\n\n\t\n\n07/22/1988\n\n\n\n\nPhone\n\n\t\n\n(669) 555-0187\n\n\n\n\nAllergy\n\n\t\n\nPenicillin\n\n\n\n\nMedication 1\n\n\t\n\nLisinopril 10 mg daily\n\n\n\n\nMedication 2\n\n\t\n\nMetformin 500 mg twice daily\n\n\n\n\nEmail\n\n\t\n\njames@example.com\n\n\n\n\nSecondary insurance\n\n\t\n\nSample Plan B\n\n\n\n\nHigh blood pressure\n\n\t\n\nYes (checked)\n\n\n\n\nDiabetes\n\n\t\n\nYes (checked)\n\n\n\n\nAsthma\n\n\t\n\nNo (unchecked)\n\n\n\n\nHeart disease\n\n\t\n\nNo (unchecked)"
+}

@@ -1,0 +1,206 @@
+[
+  {
+    "id": "TC01",
+    "title": "Clear job application",
+    "context": "C1",
+    "input": "I1",
+    "target": "O1",
+    "requirements": [
+      "R1",
+      "R2",
+      "R4",
+      "R7",
+      "R8"
+    ],
+    "variant": "flat",
+    "form": "job"
+  },
+  {
+    "id": "TC02",
+    "title": "Clear medical intake",
+    "context": "C1",
+    "input": "I2",
+    "target": "O1",
+    "requirements": [
+      "R1",
+      "R2",
+      "R4"
+    ],
+    "variant": "flat",
+    "form": "medical"
+  },
+  {
+    "id": "TC03",
+    "title": "Low light",
+    "context": "C2",
+    "input": "I2",
+    "target": "O1",
+    "requirements": [
+      "R2",
+      "R4"
+    ],
+    "variant": "dark",
+    "form": "medical"
+  },
+  {
+    "id": "TC04",
+    "title": "Glare and tilt",
+    "context": "C3",
+    "input": "I2",
+    "target": "O1/O5",
+    "requirements": [
+      "R4",
+      "R5"
+    ],
+    "variant": "glare",
+    "form": "medical"
+  },
+  {
+    "id": "TC05",
+    "title": "Upside-down job application",
+    "context": "C4",
+    "input": "I1",
+    "target": "O1",
+    "requirements": [
+      "R4"
+    ],
+    "variant": "rotate",
+    "form": "job"
+  },
+  {
+    "id": "TC06",
+    "title": "Medical scan",
+    "context": "C5",
+    "input": "I2",
+    "target": "O1",
+    "requirements": [
+      "R1",
+      "R2"
+    ],
+    "variant": "scan",
+    "form": "medical"
+  },
+  {
+    "id": "TC07",
+    "title": "Vague prompt",
+    "context": "C6",
+    "input": "I2",
+    "target": "O1",
+    "requirements": [
+      "R1"
+    ],
+    "variant": "summary",
+    "form": "medical"
+  },
+  {
+    "id": "TC08",
+    "title": "Mild blur",
+    "context": "C1",
+    "input": "I3",
+    "target": "O1",
+    "requirements": [
+      "R4"
+    ],
+    "variant": "blur",
+    "form": "job"
+  },
+  {
+    "id": "TC09",
+    "title": "Unreadable answers",
+    "context": "C1",
+    "input": "I10",
+    "target": "O5",
+    "requirements": [
+      "R5"
+    ],
+    "variant": "severe",
+    "form": "job"
+  },
+  {
+    "id": "TC10",
+    "title": "Creased medication list",
+    "context": "C1",
+    "input": "I4",
+    "target": "O1",
+    "requirements": [
+      "R2",
+      "R4"
+    ],
+    "variant": "crease",
+    "form": "medical"
+  },
+  {
+    "id": "TC11",
+    "title": "Handwriting in print",
+    "context": "C1",
+    "input": "I5",
+    "target": "O1",
+    "requirements": [
+      "R3"
+    ],
+    "variant": "print",
+    "form": "job"
+  },
+  {
+    "id": "TC12",
+    "title": "Handwriting in cursive",
+    "context": "C1",
+    "input": "I6",
+    "target": "O1/O5",
+    "requirements": [
+      "R2",
+      "R3",
+      "R5"
+    ],
+    "variant": "cursive",
+    "form": "medical"
+  },
+  {
+    "id": "TC13",
+    "title": "Corrected checkbox",
+    "context": "C1",
+    "input": "I7",
+    "target": "O1",
+    "requirements": [
+      "R2"
+    ],
+    "variant": "correct",
+    "form": "medical"
+  },
+  {
+    "id": "TC14",
+    "title": "Blank contact and insurance",
+    "context": "C1",
+    "input": "I8",
+    "target": "O1",
+    "requirements": [
+      "R6"
+    ],
+    "variant": "blank",
+    "form": "medical"
+  },
+  {
+    "id": "TC15",
+    "title": "Accented full name",
+    "context": "C1",
+    "input": "I9",
+    "target": "O1",
+    "requirements": [
+      "R7"
+    ],
+    "variant": "accent",
+    "form": "job"
+  },
+  {
+    "id": "TC16",
+    "title": "Three fresh requests",
+    "context": "C1",
+    "input": "I1",
+    "target": "O1 + agreement",
+    "requirements": [
+      "R8"
+    ],
+    "variant": "repeat",
+    "form": "job"
+  }
+]

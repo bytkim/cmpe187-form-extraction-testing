@@ -1,0 +1,25 @@
+{
+  "job": {
+    "name": "Maria Nguyen",
+    "address": "1452 Alum Rock Ave, San Jose, CA 95116",
+    "phone": "(408) 555-0142",
+    "position": "Junior Software Engineer",
+    "start_date": "06/01/2026",
+    "salary": "$72,000",
+    "work_authorized": true
+  },
+  "medical": {
+    "name": "James Okafor",
+    "dob": "07/22/1988",
+    "phone": "(669) 555-0187",
+    "allergy": "Penicillin",
+    "medication_1": "Lisinopril 10 mg daily",
+    "medication_2": "Metformin 500 mg twice daily",
+    "email": "james@example.com",
+    "secondary_insurance": "Sample Plan B",
+    "high_blood_pressure": true,
+    "diabetes": true,
+    "asthma": false,
+    "heart_disease": false
+  }
+}

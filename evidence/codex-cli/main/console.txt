@@ -1,0 +1,46 @@
+codex-cli 0.171.0-alpha.13  |  gpt-6.2-sol  |  45 fresh requests
+TC01  run 2  PASS       4.85 s  Clear job application
+TC01  run 3  PASS       4.95 s  Clear job application
+TC01  run 1  PASS       5.18 s  Clear job application
+TC02  run 3  PASS       5.46 s  Clear medical intake
+TC02  run 1  PASS       5.89 s  Clear medical intake
+TC02  run 2  PASS       5.92 s  Clear medical intake
+TC03  run 2  PASS       5.95 s  Low light
+TC03  run 3  PASS       6.92 s  Low light
+TC03  run 1  PASS       9.40 s  Low light
+TC04  run 2  FAIL       6.34 s  Glare and tilt
+TC04  run 1  FAIL      10.01 s  Glare and tilt
+TC04  run 3  FAIL       7.25 s  Glare and tilt
+TC05  run 1  PASS       5.03 s  Upside-down job application
+TC05  run 2  PASS       5.35 s  Upside-down job application
+TC05  run 3  PASS       4.90 s  Upside-down job application
+TC06  run 1  PASS       7.13 s  Medical scan
+TC06  run 3  PASS       5.45 s  Medical scan
+TC06  run 2  PASS       5.72 s  Medical scan
+TC07  run 3  PASS       5.10 s  Vague prompt
+TC07  run 1  PASS       6.60 s  Vague prompt
+TC07  run 2  PASS       5.78 s  Vague prompt
+TC08  run 1  PASS       5.35 s  Mild blur
+TC08  run 3  PASS       5.74 s  Mild blur
+TC08  run 2  PASS       9.46 s  Mild blur
+TC09  run 1  PASS       4.47 s  Unreadable answers
+TC09  run 3  PASS       4.93 s  Unreadable answers
+TC09  run 2  PASS       9.05 s  Unreadable answers
+TC10  run 1  PASS       5.93 s  Creased medication list
+TC10  run 2  PASS       5.65 s  Creased medication list
+TC11  run 1  PASS       4.77 s  Handwriting in print
+TC10  run 3  PASS       8.75 s  Creased medication list
+TC11  run 2  PASS       4.36 s  Handwriting in print
+TC11  run 3  PASS       5.18 s  Handwriting in print
+TC12  run 2  PASS       5.55 s  Handwriting in cursive
+TC12  run 3  PASS       5.89 s  Handwriting in cursive
+TC12  run 1  PASS      10.09 s  Handwriting in cursive
+TC13  run 1  PASS       6.61 s  Corrected checkbox
+TC13  run 2  PASS       6.13 s  Corrected checkbox
+TC13  run 3  PASS       5.88 s  Corrected checkbox
+TC14  run 1  PASS       5.78 s  Blank contact and insurance
+TC14  run 2  PASS       6.03 s  Blank contact and insurance
+TC14  run 3  PASS       5.79 s  Blank contact and insurance
+TC15  run 1  PASS       5.75 s  Accented full name
+TC15  run 2  PASS       5.30 s  Accented full name
+TC15  run 3  PASS       5.38 s  Accented full name

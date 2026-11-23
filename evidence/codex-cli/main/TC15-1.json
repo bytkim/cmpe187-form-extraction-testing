@@ -1,0 +1,27 @@
+{
+  "id": "TC15",
+  "rep": 1,
+  "sha256": "7fb6b02a962e596c4f5528efbf9dd45b78ee3ae3f4602aff514cdba570aafe77",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "backend": "Codex CLI",
+  "model": "gpt-6.2-sol",
+  "started_utc": "2026-11-23T01:19:57.436479+00:00",
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 14280,
+    "cached_input_tokens": 10624,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 90,
+    "reasoning_output_tokens": 0
+  },
+  "raw": "{\n  \"name\": \"José Muñoz-Ortega\",\n  \"address\": \"1452 Alum Rock Ave, San Jose, CA 95116\",\n  \"phone\": \"(408) 555-0142\",\n  \"position\": \"Junior Software Engineer\",\n  \"start_date\": \"06/01/2026\",\n  \"salary\": \"$72,000\",\n  \"work_authorized\": true\n}",
+  "elapsed_s": 5.754
+}

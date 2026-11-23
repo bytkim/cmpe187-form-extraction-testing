@@ -1,0 +1,9 @@
+{
+  "id": "TC16",
+  "rep": 1,
+  "sha256": "c8600b7a4fb41a8a395ac55c517c86c732932622335eb4c49bf8d7ec8b3a07f6",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "backend": "ChatGPT web",
+  "infrastructure_error": "Get Plus for more uploads Or wait 23 hours to upload again",
+  "observed_utc": "2026-11-23T01:15:48.574Z"
+}

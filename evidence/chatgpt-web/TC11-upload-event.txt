@@ -1,0 +1,1 @@
+Browser event before extraction: TC11.png — Upload failed. No assistant response. Excluded from model outcomes.

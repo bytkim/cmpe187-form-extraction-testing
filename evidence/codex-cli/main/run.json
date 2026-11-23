@@ -1,0 +1,15 @@
+{
+  "cli": "codex-cli 0.171.0-alpha.13",
+  "model": "gpt-6.2-sol",
+  "workers": 3,
+  "attempts": 45,
+  "wall_s": 94.099,
+  "disabled_features": [
+    "shell_tool",
+    "unified_exec",
+    "apps",
+    "plugins",
+    "memories",
+    "multi_agent"
+  ]
+}

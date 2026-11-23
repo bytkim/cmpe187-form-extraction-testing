@@ -1,0 +1,27 @@
+{
+  "id": "TC01",
+  "rep": 3,
+  "sha256": "c8600b7a4fb41a8a395ac55c517c86c732932622335eb4c49bf8d7ec8b3a07f6",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "backend": "Codex CLI",
+  "model": "gpt-6.2-sol",
+  "started_utc": "2026-11-23T01:18:32.190967+00:00",
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 14282,
+    "cached_input_tokens": 10624,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 85,
+    "reasoning_output_tokens": 0
+  },
+  "raw": "{\n  \"name\": \"Maria Nguyen\",\n  \"address\": \"1452 Alum Rock Ave, San Jose, CA 95116\",\n  \"phone\": \"(408) 555-0142\",\n  \"position\": \"Junior Software Engineer\",\n  \"start_date\": \"06/01/2026\",\n  \"salary\": \"$72,000\",\n  \"work_authorized\": true\n}",
+  "elapsed_s": 4.954
+}

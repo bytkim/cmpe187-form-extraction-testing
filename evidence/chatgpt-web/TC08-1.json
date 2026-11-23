@@ -1,0 +1,11 @@
+{
+  "id": "TC08",
+  "rep": 1,
+  "backend": "ChatGPT web / default / temporary chat",
+  "sha256": "490fddef3b45e0e4f5f179519cad2c5baebc661e2bdacdd96dca3939907b041e",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "started_utc": "2026-11-23T01:09:09.756Z",
+  "elapsed_s": 9.451,
+  "raw": "{\n  \"name\": \"Maria Nguyen\",\n  \"address\": \"1452 Alum Rock Ave, San Jose, CA 95116\",\n  \"phone\": \"(408) 555-0142\",\n  \"position\": \"Junior Software Engineer\",\n  \"start_date\": \"06/01/2026\",\n  \"salary\": \"$72,000\",\n  \"work_authorized\": true\n}",
+  "visible_text": "JSON\n{\n  \"name\": \"Maria Nguyen\",\n  \"address\": \"1452 Alum Rock Ave, San Jose, CA 95116\",\n  \"phone\": \"(408) 555-0142\",\n  \"position\": \"Junior Software Engineer\",\n  \"start_date\": \"06/01/2026\",\n  \"salary\": \"$72,000\",\n  \"work_authorized\": true\n}"
+}

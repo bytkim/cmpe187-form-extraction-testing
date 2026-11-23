@@ -1,0 +1,186 @@
+[
+  {
+    "stage": "setup",
+    "command": "python3 demo.py setup --work demo-work",
+    "events": [
+      [
+        0.114,
+        "codex-cli 0.171.0-alpha.13"
+      ],
+      [
+        0.114,
+        "Opening the UCI handwritten digit archive..."
+      ],
+      [
+        2.034,
+        "Discovered 3823 training rows, retained the first labeled sample of each digit."
+      ],
+      [
+        2.035,
+        "Source member: optdigits.tra"
+      ],
+      [
+        2.035,
+        "Training rows: 3823"
+      ],
+      [
+        2.035,
+        "Digit 4: source row 4"
+      ],
+      [
+        2.035,
+        "Verified the packaged ten-glyph sample against UCI."
+      ]
+    ],
+    "elapsed": 2.043
+  },
+  {
+    "stage": "generate",
+    "command": "python3 demo.py generate --work demo-work",
+    "events": [
+      [
+        0.058,
+        "TC01  C1 x I1   O1              TC01.png  c8600b7a4f"
+      ],
+      [
+        0.074,
+        "TC02  C1 x I2   O1              TC02.png  739474d783"
+      ],
+      [
+        0.091,
+        "TC03  C2 x I2   O1              TC03.png  0a20a9f9ff"
+      ],
+      [
+        0.141,
+        "TC04  C3 x I2   O1/O5           TC04.png  ca7ab30cf9"
+      ],
+      [
+        0.152,
+        "TC05  C4 x I1   O1              TC05.png  4171cc2724"
+      ],
+      [
+        0.166,
+        "TC06  C5 x I2   O1              TC06.png  28a04bd897"
+      ],
+      [
+        0.181,
+        "TC07  C6 x I2   O1              TC07.png  739474d783"
+      ],
+      [
+        0.201,
+        "TC08  C1 x I3   O1              TC08.png  490fddef3b"
+      ],
+      [
+        0.215,
+        "TC09  C1 x I10  O5              TC09.png  e83f57dedf"
+      ],
+      [
+        0.23,
+        "TC10  C1 x I4   O1              TC10.png  5e1b720f4d"
+      ],
+      [
+        0.242,
+        "TC11  C1 x I5   O1              TC11.png  6ae64bffb1"
+      ],
+      [
+        0.259,
+        "TC12  C1 x I6   O1/O5           TC12.png  00298bcb7b"
+      ],
+      [
+        0.275,
+        "TC13  C1 x I7   O1              TC13.png  2ad010e2f9"
+      ],
+      [
+        0.289,
+        "TC14  C1 x I8   O1              TC14.png  1e7f54e37b"
+      ],
+      [
+        0.3,
+        "TC15  C1 x I9   O1              TC15.png  7fb6b02a96"
+      ],
+      [
+        0.31,
+        "TC16  C1 x I1   O1 + agreement  TC16.png  c8600b7a4f"
+      ],
+      [
+        0.311,
+        "Unique image digests: 14"
+      ]
+    ],
+    "elapsed": 0.318
+  },
+  {
+    "stage": "live",
+    "command": "python3 demo.py live --work demo-work",
+    "events": [
+      [
+        0.074,
+        "codex-cli 0.171.0-alpha.13  |  gpt-6.2-sol  |  1 fresh requests"
+      ],
+      [
+        38.108,
+        "TC14  run 1  PASS      38.03 s  Blank contact and insurance"
+      ],
+      [
+        38.119,
+        "medication_1 = \"Lisinopril 10 mg daily\" O1"
+      ],
+      [
+        38.119,
+        "email = null O1"
+      ],
+      [
+        38.119,
+        "secondary_insurance = null O1"
+      ],
+      [
+        38.119,
+        "Checks passed: 12 / 12"
+      ]
+    ],
+    "elapsed": 38.128
+  },
+  {
+    "stage": "results",
+    "command": "python3 demo.py results --work demo-work",
+    "events": [
+      [
+        0.069,
+        "codex-cli {'PASS': 45, 'FAIL': 3}"
+      ],
+      [
+        0.069,
+        "  Correct field checks: 447 / 450"
+      ],
+      [
+        0.069,
+        "  TC16 agreement: 7 / 7"
+      ],
+      [
+        0.069,
+        "  TC04 run 1 asthma = null"
+      ],
+      [
+        0.069,
+        "  TC04 run 2 asthma = null"
+      ],
+      [
+        0.069,
+        "  TC04 run 3 asthma = null"
+      ],
+      [
+        0.073,
+        "chatgpt-web {'PASS': 14, 'FAIL': 1, 'BLOCKED': 1}"
+      ],
+      [
+        0.073,
+        "  Correct field checks: 142 / 143"
+      ],
+      [
+        0.073,
+        "  TC04 run 1 asthma = false"
+      ]
+    ],
+    "elapsed": 0.078
+  }
+]

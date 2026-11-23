@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Two-form manual review</title>
+<style>body{font:18px system-ui;color:#172d41;max-width:1050px;margin:30px auto;padding:16px}h1{font-size:32px}img{width:59%;object-fit:contain;align-self:start}section{display:flex;gap:1.5rem;border-top:1px solid #acbcc4;padding:16px 0}pre{white-space:pre-wrap;font-size:16px}button{padding:10px;font-size:17px}output{font:20px monospace}</style>
+<h1>Manual review of two ChatGPT responses</h1><p>Press Start. Compare each displayed response with its image. Every visible field must be correct. An erased mark must be reported as [illegible]. Record PASS or FAIL and identify discrepancies before checking the automated results.</p><button onclick="t=performance.now();document.querySelector('main').hidden=false">Start review</button> <button onclick="if(t)document.querySelector('output').textContent=((performance.now()-t)/1000).toFixed(1)+' seconds'">Finish</button> <output></output><main hidden><h2>TC01</h2><section><img alt="Fictional form input" src="automation/fixtures/TC01.png"><pre>{
+  &quot;name&quot;: &quot;Maria Nguyen&quot;,
+  &quot;address&quot;: &quot;1452 Alum Rock Ave, San Jose, CA 95116&quot;,
+  &quot;phone&quot;: &quot;(408) 555-0142&quot;,
+  &quot;position&quot;: &quot;Junior Software Engineer&quot;,
+  &quot;start_date&quot;: &quot;06/01/2026&quot;,
+  &quot;salary&quot;: &quot;$72,000&quot;,
+  &quot;work_authorized&quot;: true
+}</pre></section><h2>TC04</h2><section><img alt="Fictional form input" src="automation/fixtures/TC04.png"><pre>{
+  &quot;name&quot;: &quot;James Okafor&quot;,
+  &quot;dob&quot;: &quot;07/22/1988&quot;,
+  &quot;phone&quot;: &quot;(669) 555-0187&quot;,
+  &quot;allergy&quot;: &quot;Penicillin&quot;,
+  &quot;medication_1&quot;: &quot;Lisinopril 10 mg daily&quot;,
+  &quot;medication_2&quot;: &quot;Metformin 500 mg twice daily&quot;,
+  &quot;email&quot;: &quot;james@example.com&quot;,
+  &quot;secondary_insurance&quot;: &quot;Sample Plan B&quot;,
+  &quot;high_blood_pressure&quot;: true,
+  &quot;diabetes&quot;: true,
+  &quot;asthma&quot;: false,
+  &quot;heart_disease&quot;: false
+}</pre></section></main><script>let t;</script></html>

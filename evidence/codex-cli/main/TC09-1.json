@@ -1,0 +1,27 @@
+{
+  "id": "TC09",
+  "rep": 1,
+  "sha256": "e83f57dedf2d222f0e0b64c67245970248ff23176ef01f9e72b1fe9f307852ce",
+  "prompt": "Extract every field from this form and return JSON. Use null for blank fields and write [illegible] for anything you can't read. Use one flat object with these keys: name, address, phone, position, start_date, salary, work_authorized. Use true/false for boxes. Preserve printed text and punctuation.",
+  "backend": "Codex CLI",
+  "model": "gpt-6.2-sol",
+  "started_utc": "2026-11-23T01:19:20.410445+00:00",
+  "event_types": [
+    "thread.started",
+    "turn.started",
+    "item.completed",
+    "turn.completed"
+  ],
+  "item_types": [
+    "agent_message"
+  ],
+  "usage": {
+    "input_tokens": 14280,
+    "cached_input_tokens": 10624,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 72,
+    "reasoning_output_tokens": 0
+  },
+  "raw": "{\n  \"name\": \"[illegible]\",\n  \"address\": \"[illegible]\",\n  \"phone\": \"[illegible]\",\n  \"position\": \"[illegible]\",\n  \"start_date\": \"[illegible]\",\n  \"salary\": \"[illegible]\",\n  \"work_authorized\": \"[illegible]\"\n}",
+  "elapsed_s": 4.475
+}
